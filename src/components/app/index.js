@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { init as firebaseInit } from '../firebase'
 
-import { AppContainer } from  './styles'
+import { AppContainer } from './styles'
 
 export default class App extends Component {
   constructor (props) {
@@ -9,10 +9,10 @@ export default class App extends Component {
     firebaseInit()
   }
 
-  render() {
+  render () {
     return (
       <AppContainer>
       </AppContainer>
-    );
+    )
   }
 }
