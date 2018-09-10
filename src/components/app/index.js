@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { init as firebaseInit } from '../firebase'
+import { init as firebaseInit } from '../../firebase'
 
 import { AppContainer } from './styles'
 
