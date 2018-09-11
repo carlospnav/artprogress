@@ -10,6 +10,6 @@ export const init = () => {
     messagingSenderId: '25345731288'
   }
   firebase.initializeApp(config)
-  const db = firebase.database()
+  const db = firebase.firestore()
   return db
 }
