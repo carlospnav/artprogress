@@ -1,6 +1,7 @@
 import * as firebase from 'firebase'
 
-export const init = () => {
+let db
+(function init () {
   let config = {
     apiKey: 'AIzaSyDVbJ0aJbXsXiBhSfNklWw6JyA52HS9N1I',
     authDomain: 'artprogress-841e6.firebaseapp.com',
@@ -10,6 +11,11 @@ export const init = () => {
     messagingSenderId: '25345731288'
   }
   firebase.initializeApp(config)
-  const db = firebase.firestore()
-  return db
-}
+  db = firebase.firestore()
+  /* FireStore settings */
+  const settings = {
+    timestampsInSnapshots: true // Changes dates in firestore to be timestamps.
+  }
+  db.settings(settings)
+})()
+export default db

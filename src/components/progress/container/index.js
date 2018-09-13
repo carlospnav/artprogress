@@ -2,8 +2,13 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 import { convertObjToArr } from '../../../store/utils/reducers'
+// import { getArtPieces } from '../../../store/api'
 
 class ProgressContainer extends Component {
+  // async componentDidMount () {
+  //   const artPieces = await getArtPieces()
+  // }
+
   render () {
     const { artPieces } = this.props
     return (
