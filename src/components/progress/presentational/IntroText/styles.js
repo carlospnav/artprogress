@@ -1,4 +1,6 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
+
+import { WhiteText, BaseText } from '../../../shared/texts'
 
 export const StyledWrapper = styled.div`
   width: 100vw;
@@ -6,13 +8,6 @@ export const StyledWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 200px 0;
-`
-
-const BaseText = css`
-  margin: 0;
-  font-family: Roboto;
-  text-align: center;
-  color: white;
 `
 
 export const Title = styled.h1`
@@ -23,10 +18,7 @@ export const Title = styled.h1`
   font-style: italic;
 `
 
-export const Text = styled.p`
-  ${BaseText}
+export const Text = styled(WhiteText)`
   margin-top: 20px;
   width: 500px;
-  font-weight: 300;
-  font-size: 15px;
 `
