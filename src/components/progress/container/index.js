@@ -4,6 +4,8 @@ import PropTypes from 'prop-types'
 import { convertObjToArr } from '../../../store/utils/reducers'
 import { requestArtPieces } from '../../../store/actions/artPieces'
 
+import { StyledContainer } from './styles'
+
 class ProgressContainer extends Component {
   async componentDidMount () {
     const { dispatch } = this.props
@@ -12,13 +14,13 @@ class ProgressContainer extends Component {
 
   render () {
     const { artPieces } = this.props
-    console.log(artPieces)
+
     return (
-      <content>
+      <StyledContainer>
         {artPieces && artPieces.map(piece => (
           <p key={piece.name}>{piece.name}</p>
         ))}
-      </content>
+      </StyledContainer>
     )
   }
 }

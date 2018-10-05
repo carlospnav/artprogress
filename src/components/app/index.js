@@ -1,14 +1,12 @@
 import React, { Component } from 'react'
 
-import { AppContainer } from './styles'
+import './rootStyles.css'
 import Progress from '../progress/container'
 
 class App extends Component {
   render () {
     return (
-      <AppContainer>
-        <Progress />
-      </AppContainer>
+      <Progress />
     )
   }
 }
