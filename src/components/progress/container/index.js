@@ -5,6 +5,7 @@ import { convertObjToArr } from '../../../store/utils/reducers'
 import { requestArtPieces } from '../../../store/actions/artPieces'
 
 import { StyledContainer } from './styles'
+import IntroText from '../presentational/IntroText'
 
 class ProgressContainer extends Component {
   async componentDidMount () {
@@ -13,13 +14,14 @@ class ProgressContainer extends Component {
   }
 
   render () {
-    const { artPieces } = this.props
+    // const { artPieces } = this.props
 
     return (
       <StyledContainer>
-        {artPieces && artPieces.map(piece => (
+        <IntroText />
+        {/* {artPieces && artPieces.map(piece => (
           <p key={piece.name}>{piece.name}</p>
-        ))}
+        ))} */}
       </StyledContainer>
     )
   }
