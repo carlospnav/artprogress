@@ -7,6 +7,7 @@ import { requestArtPieces } from '../../../store/actions/artPieces'
 import { StyledContainer } from './styles'
 import IntroText from '../presentational/IntroText'
 import BlogLink from '../presentational/blogLink'
+import CenterPiece from '../presentational/centerPiece'
 
 class ProgressContainer extends Component {
   async componentDidMount () {
@@ -23,6 +24,7 @@ class ProgressContainer extends Component {
         {/* {artPieces && artPieces.map(piece => (
           <p key={piece.name}>{piece.name}</p>
         ))} */}
+        <CenterPiece />
         <BlogLink />
       </StyledContainer>
     )
