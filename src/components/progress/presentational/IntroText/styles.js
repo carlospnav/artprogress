@@ -8,6 +8,7 @@ export const StyledWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 200px 0;
+  z-index: 1;
 `
 
 export const Title = styled.h1`
