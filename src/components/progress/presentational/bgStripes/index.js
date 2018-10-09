@@ -5,7 +5,7 @@ import { StyledWrapper, Stripe } from './styles'
 const stripes = [...Array(9).keys()]
 
 const BgStripes = () => {
-  const height = 125
+  const height = 160
   let decreaser = 0
 
   return (
@@ -16,7 +16,7 @@ const BgStripes = () => {
 
         if (index > 5) decreaser += 150
 
-        yMultiplier = (height * index) - (index * 15)
+        yMultiplier = (height * index) - (index * 18)
         xMultiplier = ((index * 100) - 900) - decreaser
         return (
           <Stripe
