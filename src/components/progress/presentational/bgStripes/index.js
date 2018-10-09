@@ -1,25 +1,34 @@
 import React from 'react'
 
-import Stripe from './stripe'
-import { StyledWrapper } from './styles'
+import { StyledWrapper, Stripe } from './styles'
 
-// const stripes = [...Array(5).keys()]
+const stripes = [...Array(9).keys()]
 
-const BgStripes = () => (
-  <StyledWrapper>
-    {/* {stripes.map((stripe, index) => (
-      <Stripe  />
-    ))} */}
-    <Stripe />
-    <Stripe />
-    <Stripe />
-    <Stripe />
-    <Stripe />
-    <Stripe />
-    <Stripe />
-    <Stripe />
-    <Stripe />
-  </StyledWrapper>
-)
+const BgStripes = () => {
+  const height = 125
+  let decreaser = 0
+
+  return (
+    <StyledWrapper>
+      {stripes.map((item, index) => {
+        let yMultiplier
+        let xMultiplier
+
+        if (index > 5) decreaser += 150
+
+        yMultiplier = (height * index) - (index * 15)
+        xMultiplier = ((index * 100) - 900) - decreaser
+        return (
+          <Stripe
+            key={`stripe${index}`}
+            height={height}
+            yPos={yMultiplier}
+            xPos={xMultiplier}
+          />
+        )
+      })}
+    </StyledWrapper>
+  )
+}
 
 export default BgStripes

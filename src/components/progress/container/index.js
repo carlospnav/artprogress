@@ -5,6 +5,7 @@ import { convertObjToArr } from '../../../store/utils/reducers'
 import { requestArtPieces } from '../../../store/actions/artPieces'
 
 import { StyledContainer } from './styles'
+import BgStripes from '../presentational/bgStripes'
 import IntroText from '../presentational/IntroText'
 import BlogLink from '../presentational/blogLink'
 import CenterPiece from '../presentational/centerPiece'
@@ -20,6 +21,7 @@ class ProgressContainer extends Component {
 
     return (
       <StyledContainer>
+        <BgStripes />
         <IntroText />
         {/* {artPieces && artPieces.map(piece => (
           <p key={piece.name}>{piece.name}</p>

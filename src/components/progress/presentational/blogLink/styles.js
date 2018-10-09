@@ -8,4 +8,5 @@ export const StyledWrapper = styled.div`
   width: 410px;
   height: 325px;
   position: relative;
+  z-index: 1;
 `

@@ -1,8 +1,9 @@
 import React from 'react'
 
-const Stripe = () => (
-  <div>
-  </div>
-)
+import { Stripe as StyledStripe } from './styles'
 
+const Stripe = (width) => (
+  <StyledStripe width={width} />
+)
+// REMOVE
 export default Stripe

@@ -5,5 +5,5 @@ export const StyledWrapper = styled.div`
   width: 800px;
   height: 480px;
   margin: 100px 0;
-  background-color: red;
+  z-index: 1;
 `
