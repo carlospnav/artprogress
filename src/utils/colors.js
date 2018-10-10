@@ -1,12 +1,19 @@
 const colors = {
   solid: {
-    red: '#ff4363'
+    red: '#ff4363',
+    blueBorder: '#6248e7',
+    month: '#8e7adb'
   },
   rgbs: {
     bgStripe: {
       r: 180,
       g: 70,
       b: 145
+    },
+    timeControlsBlue: {
+      r: 83,
+      g: 63,
+      b: 197
     }
   },
   gradients: {
