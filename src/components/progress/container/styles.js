@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import colors from '../../../utils/colors'
 
 export const StyledContainer = styled.div`
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   background: linear-gradient(

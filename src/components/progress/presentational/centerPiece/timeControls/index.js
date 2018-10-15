@@ -2,9 +2,9 @@ import React from 'react'
 
 import {
   StyledWrapper,
-  MonthControl,
-  MonthText,
-  MonthVerticalStripe
+  HorizontalStripe,
+  VerticalStripe,
+  MonthText
 } from './styles'
 
 const months = [
@@ -24,11 +24,13 @@ const months = [
 
 const TimeControls = () => (
   <StyledWrapper>
+    <HorizontalStripe>
+      {months.map(month => (
+        <VerticalStripe key={month.name} />
+      ))}
+    </HorizontalStripe>
     {months.map(month => (
-      <MonthControl key={month.name}>
-        <MonthVerticalStripe />
-        <MonthText>{month.name}</MonthText>
-      </MonthControl>
+      <MonthText key={month.name}>{month.name}</MonthText>
     ))}
   </StyledWrapper>
 )

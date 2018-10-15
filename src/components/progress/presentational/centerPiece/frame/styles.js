@@ -2,8 +2,7 @@ import styled from 'styled-components'
 
 export const StyledWrapper = styled.div`
   display: flex;
-  width: 760px;
-  height: 513px;
+  grid-column: 1 / 1;
   padding: 20px;
   background-color: white;
 `

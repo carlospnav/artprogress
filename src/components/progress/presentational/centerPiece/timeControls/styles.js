@@ -23,25 +23,21 @@ export const StyledWrapper = styled.div`
   );
   display: flex;
   justify-content: space-between;
-
-  &:before {
-    position: absolute;
-    content: "";
-    height: 1px;
-    top: 0;
-    left: 0;
-    margin: 0 20px;
-    width: calc(100% - 40px);
-    background-color: ${colors.solid.blueBorder};
-  }
 `
-export const MonthControl = styled.div`
-  flex: 1;
-  display: flex;
-  justify-content: center;
-`
-export const MonthVerticalStripe = styled.div`
+export const HorizontalStripe = styled.div`
   position: absolute;
+  content: "";
+  height: 1px;
+  top: 0;
+  left: 0;
+  margin: 0 10px;
+  width: calc(100% - 20px);
+  background-color: ${colors.solid.blueBorder};
+  display: flex;
+  justify-content: space-between;
+`
+export const VerticalStripe = styled.div`
+  position: relative;
   height: 7px;
   width: 1px;
   background-color: ${colors.solid.blueBorder};
@@ -51,6 +47,11 @@ export const MonthText = styled.p`
   margin: 15px 0;
   font-family: Roboto;
   font-size: 10px;
-  font-weight: 600;
+  font-weight: 900;
   color: ${colors.solid.month};
+
+  &:hover {
+    color: white;
+    cursor: pointer;
+  }
 `
