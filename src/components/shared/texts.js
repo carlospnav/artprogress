@@ -14,3 +14,9 @@ export const WhiteText = styled.p`
   font-weight: 300;
   font-size: 15px;
 `
+export const WhiteTitle = styled.p`
+  ${BaseText}
+  font-weight: 900;
+  font-style: italic;
+  font-size: 48px;
+`

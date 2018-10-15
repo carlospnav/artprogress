@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import colors from '../../../../utils/colors'
 
 export const StyledWrapper = styled.div`
+  top: 100px;
   width: 100vw;
   height: 800px;
   position: absolute;

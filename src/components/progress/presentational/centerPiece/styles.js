@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const StyledWrapper = styled.div`
+  position: relative;
   width: 900px;
   align-self: center;
   display: grid;

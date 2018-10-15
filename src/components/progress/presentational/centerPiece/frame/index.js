@@ -1,11 +1,11 @@
 import React from 'react'
 
 import {
-  StyledWrapper,
-  ImagesContainer,
   // CurrentImage,
   // ImageSelectors,
   // Selector
+  StyledWrapper,
+  ImagesContainer
 } from './styles'
 
 const Frame = () => (

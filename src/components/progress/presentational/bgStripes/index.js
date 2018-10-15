@@ -17,7 +17,7 @@ const BgStripes = () => {
         if (index > 5) decreaser += 150
 
         yMultiplier = (height * index) - (index * 18)
-        xMultiplier = ((index * 100) - 900) - decreaser
+        xMultiplier = ((index * 100) - 800) - decreaser
         return (
           <Stripe
             key={`stripe${index}`}
