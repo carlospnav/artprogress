@@ -11,9 +11,9 @@ const colors = {
       b: 145
     },
     timeControlsBlue: {
-      r: 83,
-      g: 63,
-      b: 197
+      r: 81,
+      g: 61,
+      b: 191
     }
   },
   gradients: {

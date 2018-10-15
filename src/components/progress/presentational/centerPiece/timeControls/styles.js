@@ -35,6 +35,33 @@ export const HorizontalStripe = styled.div`
   background-color: ${colors.solid.blueBorder};
   display: flex;
   justify-content: space-between;
+
+  &:before {
+    position: absolute;
+    content: '';
+    border-top: 1px solid ${colors.solid.blueBorder};
+    width: 60px;
+    top: 0;
+    right: -60px;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    top: 1px;
+    right: -70px;
+    border-top: 1px solid rgb(
+      ${colors.rgbs.timeControlsBlue.r},
+      ${colors.rgbs.timeControlsBlue.g},
+      ${colors.rgbs.timeControlsBlue.b}
+    );
+    border-bottom: 40px solid transparent;
+    border-left: 59px solid rgb(
+      ${colors.rgbs.timeControlsBlue.r},
+      ${colors.rgbs.timeControlsBlue.g},
+      ${colors.rgbs.timeControlsBlue.b}
+    );
+  }
 `
 export const VerticalStripe = styled.div`
   position: relative;
