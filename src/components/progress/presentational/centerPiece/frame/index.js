@@ -3,15 +3,15 @@ import React from 'react'
 import {
   StyledWrapper,
   ImagesContainer,
-  CurrentImage,
-  ImageSelectors,
-  Selector
+  // CurrentImage,
+  // ImageSelectors,
+  // Selector
 } from './styles'
 
 const Frame = () => (
   <StyledWrapper>
     <ImagesContainer>
-      <ImageSelectors>
+      {/* <ImageSelectors>
         <Selector
           bg={'https://ics.art.br/wp-content/uploads/2015/05/ics_innovation_instrutores_carlos_luzzi_071.jpg'}
         />
@@ -34,7 +34,7 @@ const Frame = () => (
       <CurrentImage
         src='https://lifedrawingmontmartre.com/files/2018/07/Hand-montmartre-800x600.jpg'
         alt='Current art being displayed'
-      />
+      /> */}
     </ImagesContainer>
   </StyledWrapper>
 )

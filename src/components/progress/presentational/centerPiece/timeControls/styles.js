@@ -49,14 +49,9 @@ export const HorizontalStripe = styled.div`
     position: absolute;
     content: '';
     top: 1px;
-    right: -70px;
-    border-top: 1px solid rgb(
-      ${colors.rgbs.timeControlsBlue.r},
-      ${colors.rgbs.timeControlsBlue.g},
-      ${colors.rgbs.timeControlsBlue.b}
-    );
+    right: -60px;
     border-bottom: 40px solid transparent;
-    border-left: 59px solid rgb(
+    border-left: 50px solid rgb(
       ${colors.rgbs.timeControlsBlue.r},
       ${colors.rgbs.timeControlsBlue.g},
       ${colors.rgbs.timeControlsBlue.b}

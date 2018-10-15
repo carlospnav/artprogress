@@ -2,7 +2,8 @@ const colors = {
   solid: {
     red: '#ff4363',
     blueBorder: '#6248e7',
-    month: '#8e7adb'
+    month: '#8e7adb',
+    bgRed: '#ad3d85'
   },
   rgbs: {
     bgStripe: {
@@ -17,7 +18,7 @@ const colors = {
     }
   },
   gradients: {
-    baseBackground: ['#352390', '#5743cc']
+    baseBackground: ['#382696', '#4936b0']
   }
 }
 
