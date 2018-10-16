@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import colors from '../../../../../utils/colors'
+import { WhiteTitle } from '../../../../shared/texts'
 
 export const StyledWrapper = styled.div`
   top: -65px;
@@ -10,6 +11,24 @@ export const CtaButton = styled.button`
   background: none;
   border: none;
   padding: 0;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 19px;
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(to top right, rgb(
+        ${colors.rgbs.timeControlsBlue.r},
+        ${colors.rgbs.timeControlsBlue.g},
+        ${colors.rgbs.timeControlsBlue.b}
+      ),
+      transparent
+    );
+    transform: skew(-58deg);
+    z-index: -1;
+  }
 
   &:after {
     content: '';
@@ -22,3 +41,4 @@ export const CtaButton = styled.button`
     transform: skewY(-38deg);
   }
 `
+export const CtaText = styled(WhiteTitle)``

@@ -2,9 +2,9 @@ import React from 'react'
 
 import {
   StyledWrapper,
-  CtaButton
+  CtaButton,
+  CtaText
 } from './styles'
-import { WhiteTitle as CtaText } from '../../../../shared/texts'
 
 const CallToAction = () => (
   <StyledWrapper>
