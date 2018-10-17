@@ -3,6 +3,7 @@ const colors = {
     red: '#ff4363',
     blueBorder: '#6248e7',
     month: '#8e7adb',
+    ctaHighlight: '#513dbf',
     bgRed: '#ad3d85',
     bgHighlight: '#b63f86'
   },

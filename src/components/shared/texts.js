@@ -14,6 +14,11 @@ export const WhiteText = styled.p`
   font-weight: 300;
   font-size: 15px;
 `
+export const MenuText = styled.p`
+  ${BaseText}
+  font-weight: 500;
+  font-size: 9px;
+`
 export const WhiteTitle = styled.p`
   ${BaseText}
   font-weight: 900;

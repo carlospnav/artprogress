@@ -19,11 +19,7 @@ export const CtaButton = styled.button`
     left: 19px;
     width: 200px;
     height: 50px;
-    background: linear-gradient(to top right, rgb(
-        ${colors.rgbs.timeControlsBlue.r},
-        ${colors.rgbs.timeControlsBlue.g},
-        ${colors.rgbs.timeControlsBlue.b}
-      ),
+    background: linear-gradient(to top right, ${colors.solid.ctaHighlight},
       transparent
     );
     transform: skew(-58deg);
