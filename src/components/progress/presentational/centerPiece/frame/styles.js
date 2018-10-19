@@ -13,8 +13,8 @@ export const ImagesContainer = styled.div`
   overflow: hidden;
 `
 export const CurrentImage = styled.img`
-  filter: saturate(0);
-  object-fit: cover;
+  // filter: saturate(0);
+  object-fit: contain;
   flex: 1;
   z-index: 0;
 `

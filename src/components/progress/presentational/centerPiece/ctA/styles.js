@@ -15,8 +15,8 @@ export const CtaButton = styled.button`
   &:before {
     content: '';
     position: absolute;
-    top: 13px;
-    left: 19px;
+    top: 14px;
+    left: 16px;
     width: 200px;
     height: 50px;
     background: linear-gradient(to top right, ${colors.solid.ctaHighlight},

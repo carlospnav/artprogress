@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 import colors from '../../../../../utils/colors'
+import { MenuText } from '../../../../shared/texts'
 
 const rgbBlueControls = `
   ${colors.rgbs.timeControlsBlue.r},
@@ -64,13 +65,10 @@ export const VerticalStripe = styled.div`
   width: 1px;
   background-color: ${colors.solid.blueBorder};
 `
-export const MonthText = styled.p`
+export const MonthText = styled(MenuText)`
   position: relative;
+  opacity: 0.7;
   margin: 15px 0;
-  font-family: Roboto;
-  font-size: 10px;
-  font-weight: 900;
-  color: ${colors.solid.month};
 
   &:hover {
     color: white;

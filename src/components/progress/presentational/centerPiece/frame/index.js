@@ -1,7 +1,7 @@
 import React from 'react'
 
 import {
-  // CurrentImage,
+  CurrentImage,
   // ImageSelectors,
   // Selector
   StyledWrapper,
@@ -30,11 +30,11 @@ const Frame = () => (
         <Selector
           bg={'https://ics.art.br/wp-content/uploads/2015/05/ics_innovation_instrutores_carlos_luzzi_009-1024x576.jpg'}
         />
-      </ImageSelectors>
+      </ImageSelectors> */}
       <CurrentImage
-        src='https://lifedrawingmontmartre.com/files/2018/07/Hand-montmartre-800x600.jpg'
+        src='http://www.lngstudios.com/wp-content/uploads/2015/02/Gardenian_House_HD_for_we1l.jpg'
         alt='Current art being displayed'
-      /> */}
+      />
     </ImagesContainer>
   </StyledWrapper>
 )

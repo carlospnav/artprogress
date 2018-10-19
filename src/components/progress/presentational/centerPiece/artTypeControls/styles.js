@@ -52,17 +52,16 @@ export const CategoryTitle = styled(MenuText)`
   margin: 18px 0;
   padding-left: 15px;
   text-align: left;
-  opacity: 0.7;
+  opacity: 0.8;
 
   &:before {
     content: '';
     position: absolute;
-    width: 8px;
-    height: 8px;
+    width: 9px;
+    height: 9px;
     top: 1px;
     left: -15px;
     border-radius: 50px;
     background-color: ${colors.solid.red};
-    z-index: 3;
   }
 `
