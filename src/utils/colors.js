@@ -1,6 +1,6 @@
 const colors = {
   solid: {
-    red: '#ff4363',
+    red: '#ff4360',
     blueBorder: '#6248e7',
     month: '#8e7adb',
     ctaHighlight: '#513dbf',
