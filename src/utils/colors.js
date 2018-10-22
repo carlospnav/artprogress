@@ -8,6 +8,16 @@ const colors = {
     bgHighlight: '#b63f86'
   },
   rgbs: {
+    red: {
+      r: 255,
+      g: 67,
+      b: 99
+    },
+    bgRed: {
+      r: 173,
+      g: 61,
+      b: 133
+    },
     bgStripe: {
       r: 173,
       g: 61,

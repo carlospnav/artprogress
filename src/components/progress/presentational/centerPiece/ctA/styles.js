@@ -17,7 +17,7 @@ export const CtaButton = styled.button`
     position: absolute;
     top: 14px;
     left: 16px;
-    width: 200px;
+    width: 205px;
     height: 50px;
     background: linear-gradient(to top right, ${colors.solid.ctaHighlight},
       transparent
@@ -29,8 +29,8 @@ export const CtaButton = styled.button`
   &:after {
     content: '';
     position: absolute;
-    top: 48px;
-    right: -56px;
+    top: 46px;
+    right: -58px;
     width: 80px;
     height: 40px;
     background: linear-gradient(to right, ${colors.solid.bgRed}, transparent);

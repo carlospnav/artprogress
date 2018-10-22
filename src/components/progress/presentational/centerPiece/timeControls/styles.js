@@ -10,6 +10,7 @@ const rgbBlueControls = `
 `
 export const StyledWrapper = styled.div`
   position: relative;
+  margin-left: 20px;
   height: 40px;
   background: linear-gradient(
     to right, 

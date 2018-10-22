@@ -2,6 +2,11 @@ import styled from 'styled-components'
 import colors from '../../../../../utils/colors'
 import { MenuText } from '../../../../shared/texts'
 
+const redRGB = `
+  ${colors.rgbs.red.r}, 
+  ${colors.rgbs.red.g}, 
+  ${colors.rgbs.red.b}
+`
 export const StyledWrapper = styled.div`
   position: relative;
   display: flex;
@@ -10,8 +15,8 @@ export const StyledWrapper = styled.div`
   &:after {
     position: absolute;
     content: '';
-    left: 0;
-    top: -25px;
+    left: 2px;
+    top: -27px;
     border-top: 28px solid transparent;
     border-right: 35px solid ${colors.solid.bgRed};
   }
@@ -19,15 +24,15 @@ export const StyledWrapper = styled.div`
 export const MenuBg = styled.div`
   position: absolute;
   content: '';
-  left: 0;
-  top: 2px;
+  left: 2px;
+  top: 1px;
   width: 35px;
   height: 100%;
-  background: linear-gradient(to bottom, ${colors.solid.bgRed}, transparent);
+  background: linear-gradient(to bottom, ${colors.solid.bgRed}, transparent 70%);
   z-index: 0;
 `
 export const CategoriesWrapper = styled.div`
-  margin: 0 20px;
+  margin: 20px;
   padding: 0 10px;
   border-left-width: 1px;
   border-left-style: solid;
@@ -36,8 +41,8 @@ export const CategoriesWrapper = styled.div`
         to bottom,
         rgba(0, 0, 0, 0),
         rgba(0, 0, 0, 0) 25px,
-        ${colors.solid.red} 25px,
-        ${colors.solid.red} calc(100% - 25px),
+        rgba(${redRGB}, 0.3) 25px,
+        rgba(${redRGB}, 0.3) calc(100% - 25px),
         rgba(0, 0, 0, 0) calc(100% - 25px)
       ) 1 100%;
   display: flex;
