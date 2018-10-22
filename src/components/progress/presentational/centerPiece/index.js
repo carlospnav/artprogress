@@ -10,7 +10,7 @@ const CenterPiece = () => (
   <StyledWrapper>
     <TimeControls />
     <CallToAction />
-    <Frame />
+    <Frame imageUrl='http://www.lngstudios.com/wp-content/uploads/2015/02/Gardenian_House_HD_for_we1l.jpg'/>
     <ArtTypeControls />
   </StyledWrapper>
 )
